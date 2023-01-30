@@ -1,1 +1,125 @@
+   * {
+        box-sizing: border-box;
+    }
 
+    body {
+        background-color: #d5d5d5;
+        font-family:monospace;
+    }
+
+    h1 {
+       margin-bottom: 15px;
+    text-align: center;
+    color: #252525;
+    font-size: 50px;
+    }
+
+    section {
+        position: relative;
+        padding: 15px;
+        width: 90%;
+    }
+
+    p {
+        font-family:monospace;
+        position: relative;
+        clear: right;
+    }
+
+    div {
+        position: relative;
+        background-color: gray;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: auto;
+    }
+
+    .sub1 {
+        float: right;
+        font-family:monospace;
+        width: 100px;
+        padding: 5px;
+        margin: -3px -3px 0px;
+        text-align: center;
+        font-size: 125%;
+        font-weight: bold;
+        background-color: #FFB6C1;
+
+    }
+
+    .sub2 {
+        float: right;
+        font-family:monospace;
+        color: rgb(0, 0, 0);
+        width: 100px;
+        padding: 5px;
+        margin: -3px -3px 0px;
+        text-align: center;
+        font-size: 125%;
+        font-weight: bold;
+        background-color: #ffaa89;
+
+    }
+
+    .sub3 {
+        color: black;
+        font-family:monospace;
+        float: right;
+        width: 100px;
+        padding: 5px;
+         margin: -3px -3px 0px;
+        text-align: center;
+        font-size: 125%;
+        font-weight: bold;
+        background-color: rgb(187, 255, 162);
+
+    }
+
+    .content {
+        padding: 5px;
+        border: none;
+        background-color: gray;
+        font-family: Helvetica;
+        color: black;
+        margin: 3px ;
+        height: 150px;
+        overflow: auto;
+    }
+
+    .row {
+        width: 90%;
+    }
+
+    /*desktop version*/
+    @media (min-width: 992px) {
+        .column-lg-4 {
+            float: left;
+            width: 33.33%;
+        }
+    }
+
+    /*tablet version*/
+    @media (min-width: 768px) and (max-width: 991px) {
+        .colmn-md-6 {
+            float: left;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .colmn-md-12 {
+            float: left;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    /*mobile version*/
+    @media (max-width: 767px) {
+        .colmn-sm-12 {
+            float: left;
+            width: 100%;
+        }
+    }
